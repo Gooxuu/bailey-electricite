@@ -8,7 +8,7 @@ import { Container, CtaBand, SectionHeading } from "@/components/Section";
 import { BRAND, CERTIFICATIONS, SERVICE_AREA, SITE_URL } from "@/lib/infos";
 import { PHOTOS } from "@/lib/photos";
 
-const TITLE = "Installateur de bornes de recharge IRVE à Marly-sur-Arroux";
+const TITLE = "Installateur de bornes de recharge pour véhicules électriques à Marly-sur-Arroux";
 const DESCRIPTION =
   "Installation de bornes de recharge pour véhicules électriques à Marly-sur-Arroux par Bailey Électricité : maison individuelle, copropriété, entreprise.";
 

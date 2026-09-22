@@ -57,6 +57,30 @@ export const LOGO_FILE = "/images/logo-redraw.svg";
  */
 export const CERTIFICATIONS: { id: string; label: string; detail: string }[] = [];
 
+/** Horaires d'ouverture (PagesJaunes), affichés sur la page Contact. */
+export const HOURS: { day: string; hours: string }[] = [
+  { day: "Lundi", hours: "08h00 - 19h00" },
+  { day: "Mardi", hours: "08h00 - 19h00" },
+  { day: "Mercredi", hours: "08h00 - 19h00" },
+  { day: "Jeudi", hours: "08h00 - 19h00" },
+  { day: "Vendredi", hours: "08h00 - 19h00" },
+  { day: "Samedi", hours: "08h00 - 12h00" },
+  { day: "Dimanche", hours: "Fermé" },
+];
+
+/** Moyens de paiement acceptés (PagesJaunes). */
+export const PAYMENT_METHODS = ["Chèque", "Carte bancaire", "Visa"];
+
+/** Page Facebook de l'entreprise. */
+export const FACEBOOK_URL = "https://www.facebook.com/share/1Actrqrwyc/";
+
+/**
+ * Note Google (PagesJaunes, relevée le 2026-09-22), affichée en preuve sociale sur l'accueil.
+ * Valeur figée — ce site est 100% statique, sans appel à l'API Google. À mettre à jour à la
+ * main ici si la note évolue (voir README « Où modifier quoi »).
+ */
+export const GOOGLE_RATING = { score: "4,9", count: 17 };
+
 export const NAV_LINKS = [
   { href: "/electricite-generale/", label: "Électricité Générale" },
   { href: "/chauffage-climatisation-ventilation/", label: "Chauffage & Climatisation" },

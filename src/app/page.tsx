@@ -6,7 +6,7 @@ import IrveIllustration from "@/components/IrveIllustration";
 import PhotoSlot from "@/components/PhotoSlot";
 import { Container, CtaBand, SectionHeading } from "@/components/Section";
 import Testimonial from "@/components/Testimonial";
-import { CERTIFICATIONS, SERVICE_AREA } from "@/lib/infos";
+import { CERTIFICATIONS, GOOGLE_RATING, SERVICE_AREA } from "@/lib/infos";
 import { PHOTOS } from "@/lib/photos";
 
 const SERVICES: { icon: IconName; title: string; text: string; href: string }[] = [
@@ -47,7 +47,8 @@ export default function Accueil() {
             </h1>
             <p className="mt-6 max-w-xl text-lg leading-relaxed text-muted">
               Bailey Électricité installe et dépanne votre tableau électrique, votre climatisation réversible, votre
-              chauffage et votre borne de recharge pour véhicule électrique. Noté 4,9/5 sur Google (17 avis).
+              chauffage et votre borne de recharge pour véhicule électrique. Noté {GOOGLE_RATING.score}/5 sur Google
+              ({GOOGLE_RATING.count} avis).
             </p>
             <ContactButtons size="lg" className="mt-8" />
             <p className="mt-4 text-sm text-muted">

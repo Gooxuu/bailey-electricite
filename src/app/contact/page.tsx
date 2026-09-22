@@ -5,7 +5,10 @@ import {
   ADDRESS,
   EMAIL,
   EMAIL_MAILTO,
+  FACEBOOK_URL,
+  HOURS,
   MAPS_URL,
+  PAYMENT_METHODS,
   PHONE_DISPLAY,
   PHONE_TEL,
   SERVICE_AREA,
@@ -95,6 +98,29 @@ export default function Contact() {
                 className="mt-5 inline-flex items-center gap-2 rounded-full border border-navy/30 px-5 py-3 text-sm font-semibold text-navy transition-colors hover:bg-navy/5"
               >
                 Voir l’itinéraire
+                <Icon name="arrow" className="size-4" />
+              </a>
+
+              <h2 className="mt-8 flex items-center gap-2 font-display text-xl font-extrabold text-navy">
+                <Icon name="check" className="size-5 text-green" />
+                Horaires
+              </h2>
+              <ul className="mt-4 space-y-1.5 text-ink">
+                {HOURS.map((h) => (
+                  <li key={h.day} className="flex justify-between gap-4 text-sm">
+                    <span className="font-medium">{h.day}</span>
+                    <span className="text-muted">{h.hours}</span>
+                  </li>
+                ))}
+              </ul>
+              <p className="mt-4 text-sm text-muted">Moyens de paiement acceptés : {PAYMENT_METHODS.join(", ")}.</p>
+              <a
+                href={FACEBOOK_URL}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="mt-4 inline-flex items-center gap-2 text-sm font-semibold text-navy underline-offset-4 hover:underline"
+              >
+                Suivez-nous sur Facebook
                 <Icon name="arrow" className="size-4" />
               </a>
             </div>

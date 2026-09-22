@@ -52,6 +52,20 @@ const localBusinessJsonLd = {
   },
   areaServed: SERVICE_AREA,
   description: `${BRAND} — électricité générale, climatisation réversible, domotique et bornes de recharge IRVE. ${ADDRESS}.`,
+  openingHoursSpecification: [
+    {
+      "@type": "OpeningHoursSpecification",
+      dayOfWeek: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+      opens: "08:00",
+      closes: "19:00",
+    },
+    {
+      "@type": "OpeningHoursSpecification",
+      dayOfWeek: "Saturday",
+      opens: "08:00",
+      closes: "12:00",
+    },
+  ],
 };
 
 export default function RootLayout({
