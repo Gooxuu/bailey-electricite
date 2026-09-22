@@ -87,14 +87,14 @@ export default function Contact() {
                 Où nous trouver
               </h2>
               <p className="mt-4 text-lg text-ink">{ADDRESS}</p>
-              <p className="mt-1 text-muted">Zone d'intervention : {SERVICE_AREA}.</p>
+              <p className="mt-1 text-muted">Zone d’intervention : {SERVICE_AREA}.</p>
               <a
                 href={MAPS_URL}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="mt-5 inline-flex items-center gap-2 rounded-full border border-navy/30 px-5 py-3 text-sm font-semibold text-navy transition-colors hover:bg-navy/5"
               >
-                Voir l'itinéraire
+                Voir l’itinéraire
                 <Icon name="arrow" className="size-4" />
               </a>
             </div>

@@ -167,7 +167,7 @@ export default function BornesIrve() {
                   <h2 className="font-display text-2xl font-extrabold text-white sm:text-3xl">Bailey Électricité est certifié IRVE</h2>
                   <p className="mt-3 text-lg leading-relaxed text-white/80">
                     IRVE signifie « Infrastructure de Recharge pour Véhicules Électriques ». Cette certification atteste
-                    de la compétence de l'installateur pour ce type d'installation.
+                    de la compétence de l’installateur pour ce type d’installation.
                   </p>
                 </div>
               </div>

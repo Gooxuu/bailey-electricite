@@ -126,7 +126,7 @@ export default function Accueil() {
               href="/bornes-de-recharge-irve/"
               className="mt-8 inline-flex items-center gap-2 rounded-full bg-gold px-7 py-4 text-base font-semibold text-navy-deep transition-colors hover:bg-gold-dark"
             >
-              Découvrir l'installation de bornes
+              Découvrir l’installation de bornes
               <Icon name="arrow" className="size-5" />
             </Link>
           </div>
