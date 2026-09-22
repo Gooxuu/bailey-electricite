@@ -22,7 +22,7 @@ npm run preview    # sert out/ sur http://localhost:3003
 
 | Je veux changer… | Fichier |
 |---|---|
-| Téléphone, e-mail, adresse, WhatsApp, zone d'intervention, certifications, menu | `src/lib/infos.ts` |
+| Téléphone, e-mail, adresse, WhatsApp, zone d'intervention, certifications, menu, horaires, moyens de paiement, note Google | `src/lib/infos.ts` |
 | Ajouter les vraies photos | `src/lib/photos.ts` (voir ci-dessous) |
 | Les textes des pages | `src/app/**/page.tsx` |
 | Couleurs et polices | `src/app/globals.css` (bloc `@theme`) |
