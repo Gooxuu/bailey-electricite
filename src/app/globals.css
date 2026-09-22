@@ -1,6 +1,42 @@
 @import "tailwindcss";
 
+@theme {
+  /* Identité de marque (logo Bailey) */
+  --color-navy: #1c2a5e;
+  --color-navy-deep: #0f1638;
+  --color-gold: #f0ad1f;
+  --color-gold-dark: #cf8f0f;
+  --color-green: #1f8a4c;
+
+  /* Neutres */
+  --color-ink: #1a1f33;
+  --color-muted: #555c78;
+  --color-mist: #f4f5fa;
+  --color-line: #e3e5f0;
+
+  --font-sans: var(--font-inter), ui-sans-serif, system-ui, sans-serif;
+  --font-display: var(--font-montserrat), ui-sans-serif, system-ui, sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   background: #ffffff;
-  color: #111111;
+  color: var(--color-ink);
+  font-family: var(--font-sans);
+}
+
+a:focus-visible,
+button:focus-visible {
+  outline: 3px solid var(--color-green);
+  outline-offset: 3px;
+  border-radius: 0.5rem;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
 }
